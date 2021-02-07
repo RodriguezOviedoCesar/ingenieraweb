@@ -1,0 +1,130 @@
+@font-face{
+    font-family: 'abel';
+    src: url(../fonts/abel/Abel-Regular.ttf);
+}
+
+#cabezerageneral{
+    background-color: white;
+    font-family: 'abel' !important;
+    font-size: 18px;
+    width: 100%;
+    height: 85px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    #barranavegador{
+        width: 98%;
+        #cabezeracontenido{
+            width: 100%;
+            display: flex;
+            flex-direction: row ;
+            flex-wrap: wrap;
+            #logo{
+                flex-basis: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 100px;
+                }
+            }
+            #navegador{
+                flex-basis: 35%;
+                display: flex;
+                align-items: center;
+
+                #menu{
+                    width: 100%;
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content:space-between;
+                        padding: 15px;
+                        align-items: center;
+                        li{
+                            cursor: pointer;
+                            height: 100%;
+                            a{
+                                color: black;
+                            }
+                            #Ocultar{
+                                display: none;
+                                position: absolute;
+                                background-color: #ccc;
+                                border:1px solid black;
+                                margin-top: 2px;
+                                
+                                li{
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                        li:hover{
+                            border-bottom: 1px solid black;
+                            #Ocultar{
+                                display: block;
+                                li{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            #buscar{
+                flex-basis: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input[type=text]{
+                    width: 250px;
+                    height: 25px;
+                    border-radius: 25px;
+                    border: 2px solid black;
+                    padding-left: 20px;
+                    margin-right: 15px;
+                }
+                input[type=submit],
+                input[type=reset]{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    height: 30px;
+                    width: 90px;
+                    border-radius:25px;
+                    border: 2px solid #ccc;
+                    background-color: darkseagreen;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 300ms;
+                }
+                input[type=submit]:hover,
+                input[type=reset]:hover{
+                    background-color: green;
+                    border: green;
+                }
+            }
+            #ingreso{
+                flex-basis: 15%;
+                display: flex;
+                align-items: center;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    li{
+                        a{
+                            color: black;
+                        }
+                    }
+                    li:hover{
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: "abel";
+  src: url(../fonts/abel/Abel-Regular.ttf);
+}
+#cabezerageneral {
+  background-color: white;
+  font-family: "abel" !important;
+  font-size: 18px;
+  width: 100%;
+  height: 85px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+#cabezerageneral #barranavegador {
+  width: 98%;
+}
+#cabezerageneral #barranavegador #cabezeracontenido {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #logo {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #logo img {
+  width: 100px;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador {
+  flex-basis: 35%;
+  display: flex;
+  align-items: center;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu {
+  width: 100%;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li {
+  cursor: pointer;
+  height: 100%;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li a {
+  color: black;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li #Ocultar {
+  display: none;
+  position: absolute;
+  background-color: #ccc;
+  border: 1px solid black;
+  margin-top: 2px;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li #Ocultar li {
+  margin-top: 10px;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li:hover {
+  border-bottom: 1px solid black;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li:hover #Ocultar {
+  display: block;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #navegador #menu ul li:hover #Ocultar li {
+  width: 100%;
+  height: 100%;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #buscar {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #buscar input[type=text] {
+  width: 250px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #buscar input[type=submit],
+#cabezerageneral #barranavegador #cabezeracontenido #buscar input[type=reset] {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 30px;
+  width: 90px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  background-color: darkseagreen;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #buscar input[type=submit]:hover,
+#cabezerageneral #barranavegador #cabezeracontenido #buscar input[type=reset]:hover {
+  background-color: green;
+  border: green;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #ingreso {
+  flex-basis: 15%;
+  display: flex;
+  align-items: center;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #ingreso ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #ingreso ul li a {
+  color: black;
+}
+#cabezerageneral #barranavegador #cabezeracontenido #ingreso ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+#contenido {
+  margin-top: 1px;
+}
+#contenido .carousel-indicators li {
+  background-color: #0f2a23;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#barrapromocion {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#barrapromocion #barrapromocion1 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#barrapromocion #barrapromocion1 #descuentos {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#cajitaschicas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cajitaschicas #cajitaschicas1 {
+  width: 90%;
+  padding: 15px;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#cajitaschicas #cajitaschicas1 img:hover {
+  width: 430px;
+  height: 290px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */

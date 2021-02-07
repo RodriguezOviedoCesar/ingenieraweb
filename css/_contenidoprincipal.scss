@@ -1,0 +1,21 @@
+#barrapromocion{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    #barrapromocion1{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        #descuentos{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 20px;         
+        }
+    }
+}
